@@ -6,3 +6,10 @@ hint: You should be able to check whether x or X exists. After that, search onli
 
 
 */
+
+let str = `The XxXxXxXx-factor in the performance was the unexpected, dazzling finale.`;
+
+let findXndReplaceX = str.includes(`x` || `X`)
+  ? str.replace(/x/g, `y`).replace(/X/g, `Y`)
+  : str;
+console.log(findXndReplaceX);
